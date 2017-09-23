@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/jingjingshenye/blog/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jingjingshenye/blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+经过两周的学习，对JS有了一定的了解，为了巩固，特别在此小结。
+1.js本质是动态、弱类型、基于原型的语言。发明者是网景公司（NetScape）的布兰登·艾奇（Brendan Eich，1961年～）。
+2.动态，弱类型，基于原型既是js的特点，也是js的难点。
+3.动态：运行时确定类型，新手常犯一些错误，重构时也困难。
+4.弱类型：没有固定的类型，一切皆对象。
+5.原型：proto。这是js的难点，由此延伸出的原型，原型对象，原型链，闭包等等概念，和C#以及java的思维并不一样。
+6._proto_和prototype的区别：前者是真正的原型链，指向构造此对象（函数）的prototype（原型对象。prototype就是原型对象，本质也是对象。
+只有函数才有原型对象，原型对象有个默认的属性，指向当前对象的构造函数。因此所有的函数都有构造函数，换句话说，就是任何一个函数都可以作为构造函数来new一个实例。
+js的并无类的概念，一切皆对象。js的继承通过原型链实现，_proto_指向构造此实例的构造函数的prototype，构造函数的_proto_指向前一个构造函数的prototype，以此类推，直到object的_proto_指向null。
+具体关系可由下图揭示：
